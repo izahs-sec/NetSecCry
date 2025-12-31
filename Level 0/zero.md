@@ -79,7 +79,7 @@ It appears unreadable without proper decryption.
 <details>
 <summary><strong>CIA Triad</strong></summary>
 
-![CIA Triad](/NetSecCry/photo/cia-triad.png)
+![CIA Triad](../NetSecCry/photo/cia-triad.png)
 
 🔗 **[Resource](https://www.bemopro.com/cybersecurity-blog/what-is-the-cia-triad)**
 
