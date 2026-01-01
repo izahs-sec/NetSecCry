@@ -1,3 +1,5 @@
+# This is level zero
+
 <details>
 <summary><strong>The enemy knows the system</strong></summary>
 
@@ -79,7 +81,7 @@ It appears unreadable without proper decryption.
 <details>
 <summary><strong>CIA Triad</strong></summary>
 
-![CIA Triad](../NetSecCry/photo/cia-triad.png)
+![CIA Triad](https://github.com/izahs-sec/NetSecCry/blob/main/photo/cia-triad.png)
 
 🔗 **[Resource](https://www.bemopro.com/cybersecurity-blog/what-is-the-cia-triad)**
 
@@ -92,7 +94,8 @@ It appears unreadable without proper decryption.
 
 
 🔗 **[Types of security mechanism](https://www.geeksforgeeks.org/computer-networks/types-of-security-mechanism/)**
-![Service & Mechanism](/NetSecCry/photo/table1_4.png)
+
+![Service & Mechanism](https://github.com/izahs-sec/NetSecCry/blob/main/photo/table1_4.png)
 
 </details>
 
