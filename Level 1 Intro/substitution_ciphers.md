@@ -92,63 +92,76 @@ Problem-2: [GFG](https://www.geeksforgeeks.org/dsa/hill-cipher/)
 
 </details>
 
-<details> 
-<summary><strong><a href="https://www.tutorialspoint.com/cryptography/cryptography_one_time_pad_cipher.htm">One-Time Pad</a></strong></summary>
+<details>
+<summary><strong><a href="https://www.tutorialspoint.com/cryptography/cryptography_one_time_pad_cipher.htm">One-Time Pad (OTP)</a></strong></summary>
 
-Vernam Cipher (general idea)
+## Vernam Cipher (General Idea)
 
-Invented by Gilbert Vernam (1917)
+- Invented by **Gilbert Vernam (1917)**
+- A **symmetric key stream cipher**
+- Uses:
+  - Plaintext
+  - Key
+- Encryption is performed using:
+  - **XOR (⊕)** operation (binary form), or
+  - **Modular addition** (alphabet-based form)
 
-Uses:
+⚠️ **Important:**
+- The key **does not have to be truly random**
+- The key **may be reused**
 
-A plaintext
+📌 Because of key reuse and lack of randomness, the **Vernam cipher is not always secure**.
 
-A key
+---
 
-Encryption is done using XOR (⊕) or modular addition
+## One-Time Pad (OTP)
 
-The key does not have to be truly random and may be reused
+The **One-Time Pad (OTP)** is a **secure special case of the Vernam cipher** with strict rules.
 
-📌 Because of this, Vernam cipher is not always secure.
+### Rules of OTP
+- The key must be **truly random**
+- The key length must be **equal to the message length**
+- The key must be **used only once**
+- The key must be **kept completely secret**
 
-One-Time Pad (OTP)
+✅ When all these conditions are satisfied, OTP provides  
+**perfect secrecy**, as proven by **Claude Shannon**.
 
-OTP is the secure version of the Vernam cipher, with strict rules:
+---
 
-Key is truly random
+## Comparison: Vernam Cipher vs One-Time Pad
 
-Key length = message length
+| Feature | Vernam Cipher | One-Time Pad |
+|--------|--------------|--------------|
+| Encryption method | XOR / modular addition | XOR / modular addition |
+| Key length | Can be shorter than message | Same as message |
+| Key randomness | Not required | **Required** |
+| Key reuse | Allowed | **Not allowed** |
+| Security | Conditional | **Perfect security** |
 
-Key is used only once
+---
 
-Key is kept secret
+## Key Relationship
 
-When these conditions are met:
-✔ OTP is unbreakable (perfect secrecy – proved by Claude Shannon)
+> **All One-Time Pads are Vernam ciphers, but not all Vernam ciphers are One-Time Pads.**
 
-| Feature           | Vernam Cipher  | One-Time Pad         |
-| ----------------- | -------------- | -------------------- |
-| Encryption method | XOR / addition | XOR / addition       |
-| Key length        | Can be shorter | Same as message      |
-| Key randomness    | Not required   | Required             |
-| Key reuse         | Allowed        | **Not allowed**      |
-| Security          | Conditional    | **Perfect security** |
+---
 
+## Learning Resources
 
-
-
-Problem-1: [OTP Cipher](https://www.youtube.com/watch?v=2JzhqHxUy5E)
-
-[Resource](hhttps://www.geeksforgeeks.org/dsa/implementation-of-vernam-cipher-or-one-time-pad-algorithm/)
+- 🎥 **Problem-1:** [OTP Cipher – YouTube](https://www.youtube.com/watch?v=2JzhqHxUy5E)
+- 📘 **GeeksforGeeks:**  
+  [Implementation of Vernam Cipher / One-Time Pad Algorithm](https://www.geeksforgeeks.org/dsa/implementation-of-vernam-cipher-or-one-time-pad-algorithm/)
 
 </details>
+
 
 <details> 
 <summary><strong><a href="https://www.tutorialspoint.com/cryptography/cryptography_vigenere_cipher.htm">Vigenere Cipher</a></strong></summary>
 
 The Vigenere Cipher uses multiple Caesar ciphers based on a keyword to encrypt the plaintext.  
 
-Problem-1: [Vigenere Cipher Video](https://www.youtube.com/watch?v=GQrKEwLZcPY)
+Problem-1: [Vigenere Cipher](https://www.youtube.com/watch?v=GQrKEwLZcPY)
 
 **Handle negative values:**  
 For example:  -7 mod 26 = (-7 + 26) mod 26 = 19
