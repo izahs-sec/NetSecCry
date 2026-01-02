@@ -74,21 +74,72 @@ A Polyalphabetic Cipher uses multiple substitution alphabets to encrypt the plai
 
 The Playfair Cipher encrypts pairs of letters (digraphs) using a 5×5 key matrix generated from a keyword.
 
-You can watch a video tutorial here: [Playfair Cipher Video](https://www.youtube.com/watch?v=z4hrHlVvUu4)
+Problem-1: [Playfair Cipher ](https://www.youtube.com/watch?v=z4hrHlVvUu4)
 
 </details>
 
 <details> 
-<summary><strong><a href="">Hill Cipher</a></strong></summary>
+<summary><strong><a href="https://www.tutorialspoint.com/cryptography/cryptography_hill_cipher.htm">Hill Cipher</a></strong></summary>
 
-The Hill Cipher is a polygraphic substitution cipher that uses matrix multiplication and linear algebra to encrypt blocks of plaintext.
+The Hill Cipher is a polygraphic substitution cipher that uses **matrix multiplication** and linear algebra to encrypt blocks of plaintext. 
+
+
+
+Problem-1: [Playfair Cipher ](https://www.youtube.com/watch?v=ytJAdBLNjn0)
+
+Problem-2: [GFG](https://www.geeksforgeeks.org/dsa/hill-cipher/)
+
 
 </details>
 
 <details> 
-<summary><strong><a href="">One-Time Pad</a></strong></summary>
+<summary><strong><a href="https://www.tutorialspoint.com/cryptography/cryptography_one_time_pad_cipher.htm">One-Time Pad</a></strong></summary>
 
-The One-Time Pad uses a randomly generated key that is as long as the plaintext and is used only once, providing theoretically perfect security.
+Vernam Cipher (general idea)
+
+Invented by Gilbert Vernam (1917)
+
+Uses:
+
+A plaintext
+
+A key
+
+Encryption is done using XOR (⊕) or modular addition
+
+The key does not have to be truly random and may be reused
+
+📌 Because of this, Vernam cipher is not always secure.
+
+One-Time Pad (OTP)
+
+OTP is the secure version of the Vernam cipher, with strict rules:
+
+Key is truly random
+
+Key length = message length
+
+Key is used only once
+
+Key is kept secret
+
+When these conditions are met:
+✔ OTP is unbreakable (perfect secrecy – proved by Claude Shannon)
+
+| Feature           | Vernam Cipher  | One-Time Pad         |
+| ----------------- | -------------- | -------------------- |
+| Encryption method | XOR / addition | XOR / addition       |
+| Key length        | Can be shorter | Same as message      |
+| Key randomness    | Not required   | Required             |
+| Key reuse         | Allowed        | **Not allowed**      |
+| Security          | Conditional    | **Perfect security** |
+
+
+
+
+Problem-1: [OTP Cipher](https://www.youtube.com/watch?v=2JzhqHxUy5E)
+
+[Resource](hhttps://www.geeksforgeeks.org/dsa/implementation-of-vernam-cipher-or-one-time-pad-algorithm/)
 
 </details>
 
@@ -97,7 +148,10 @@ The One-Time Pad uses a randomly generated key that is as long as the plaintext 
 
 The Vigenere Cipher uses multiple Caesar ciphers based on a keyword to encrypt the plaintext.  
 
-You can watch a video tutorial here: [Vigenere Cipher Video](https://www.youtube.com/watch?v=GQrKEwLZcPY)
+Problem-1: [Vigenere Cipher Video](https://www.youtube.com/watch?v=GQrKEwLZcPY)
 
 **Handle negative values:**  
 For example:  -7 mod 26 = (-7 + 26) mod 26 = 19
+
+**Tabula Recta**
+![CIA Triad](https://github.com/izahs-sec/NetSecCry/blob/main/photo/tabula-recta.png)
