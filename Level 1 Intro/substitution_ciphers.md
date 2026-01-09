@@ -85,7 +85,7 @@ The Hill Cipher is a polygraphic substitution cipher that uses **matrix multipli
 
 
 
-Problem-1: [Playfair Cipher ](https://www.youtube.com/watch?v=ytJAdBLNjn0)
+Problem-1: [Hill Cipher ](https://www.youtube.com/watch?v=ytJAdBLNjn0)
 
 Problem-2: [GFG](https://www.geeksforgeeks.org/dsa/hill-cipher/)
 

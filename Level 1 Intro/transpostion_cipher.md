@@ -1,44 +1,85 @@
-All examples will be in a dropdown view
-and all examples will contain encrytpion + decryption also
+# Transposition Ciphers
 
-what is transpositon cipher? realtion with substitiona and example like AES
-write a example of transpostion cipher (drop down view)
+## What is a Transposition Cipher?
 
-give a short breif on rail fence cipher 
- and a example (drop down view)
+A **transposition cipher** is a method of encryption where the **positions of characters are rearranged** according to a fixed system, but the **characters themselves are not changed**.
 
-give a short breif on scytale cipher 
- and a example (drop down view)
+### Relation with Substitution Cipher
 
-give a short breif on route cipher 
- and a example (drop down view)
+| Cipher Type | What Changes | Example |
+|------------|--------------|---------|
+| Substitution Cipher | Characters are replaced with other characters | Caesar Cipher |
+| Transposition Cipher | Positions of characters are rearranged | Rail Fence Cipher |
 
+### Relation with AES (Advanced Encryption Standard)
 
-# Columner Transpostion Cipher
+AES is a **modern symmetric encryption algorithm** that uses both:
+- **Substitution** (via S-boxes)
+- **Transposition / Permutation** (rearranging bits)
 
-write a short breif then add this to the example dropdown 
-ZEBRAS is of length 6 (so the rows are of length 6), and the permutation is defined by the alphabetical order of the letters in the keyword. In this case, the order would be "6 3 2 4 1 5".
+This structure is known as a **Substitution–Permutation Network (SPN)**, which provides strong security compared to classical ciphers.
 
-In a regular columnar transposition cipher, any spare spaces are filled with nulls; in an irregular columnar transposition cipher, the spaces are left blank. Finally, the message is read off in columns, in the order specified by the keyword. For example, suppose we use the keyword ZEBRAS and the message WE ARE DISCOVERED. FLEE AT ONCE. In a regular columnar transposition, we write this into the grid as follows:
-
-6 3 2 4 1 5
-W E A R E D
-I S C O V E 
-R E D F L E 
-E A T O N C 
-E Q K J E U 
-providing five nulls (QKJEU), these letters can be randomly selected as they just fill out the incomplete columns and are not part of the message. The ciphertext is then read off as:
-
-EVLNE ACDTK ESEAQ ROFOJ DEECU WIREE
+---
 
 
-# double transpostion cipher
-add some short breif
+Resource : [Transposition Cipher](https://www.geeksforgeeks.org/computer-networks/transposition-cipher-techniques-in-cryptography/)
 
-
-The double transposition cipher can be treated as a single transposition with a key as long as the product of the lengths of the two keys. add some short info about this line
+## Double Transpostion
+In the following example, we use the keys **JANEAUSTEN** and **AEROPLANES** to encrypt the following plaintext: "Transposition ciphers scramble letters like puzzle pieces to create an indecipherable arrangement".
 
 
 
+---
 
+<details>
+<summary><strong>Step 1: Write plaintext into first grid (Key: JANEAUSTEN)</strong></summary>
 
+The plaintext message is written row-wise into the first grid using the key **JANEAUSTEN**.
+
+![step-1-img](https://github.com/izahs-sec/NetSecCry/blob/main/photo/dt1.png)
+
+</details>
+
+---
+
+<details>
+<summary><strong>Step 2: Read columns alphabetically (Key: JANEAUSTEN)</strong></summary>
+
+The columns are read off in **alphabetical order of the key letters**, producing an intermediate ciphertext.
+
+![step-2-img](https://github.com/izahs-sec/NetSecCry/blob/main/photo/dt2.png)
+
+</details>
+
+---
+
+<details>
+<summary><strong>Step 3: Write intermediate text into second grid (Key: AEROPLANES)</strong></summary>
+
+The output from Step 2 is written row-wise into the second grid using the key **AEROPLANES**.
+
+![step-3-img](https://github.com/izahs-sec/NetSecCry/blob/main/photo/dt3.png)
+
+</details>
+
+---
+
+<details>
+<summary><strong>Step 4: Read columns alphabetically (Key: AEROPLANES)</strong></summary>
+
+The columns are read again in alphabetical order to produce the final ciphertext.
+
+![step-4-img](https://github.com/izahs-sec/NetSecCry/blob/main/photo/dt4.png)
+
+</details>
+
+---
+
+<details>
+<summary><strong>Step 5: Final Ciphertext</strong></summary>
+
+The result after two rounds of columnar transposition is the final encrypted message.
+
+![step-5-img](https://github.com/izahs-sec/NetSecCry/blob/main/photo/dt.png)
+
+</details>
