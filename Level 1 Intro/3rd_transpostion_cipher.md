@@ -80,6 +80,6 @@ The columns are read again in alphabetical order to produce the final ciphertext
 
 The result after two rounds of columnar transposition is the final encrypted message.
 
-![step-5-img](https://github.com/izahs-sec/NetSecCry/blob/main/photo/dt.png)
+![step-5-img](https://github.com/izahs-sec/NetSecCry/blob/main/photo/dt5.png)
 
 </details>

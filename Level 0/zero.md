@@ -99,3 +99,12 @@ It appears unreadable without proper decryption.
 
 </details>
 
+
+<br>
+
+<details>
+<summary><strong>Shannon's Perfect Secrecy</strong></summary>
+
+
+🔗 [Perfect Secrecy](https://qusmart.ai/the-holy-grail-of-cryptography-shannons-perfect-secrecy/**)
+
